@@ -1,6 +1,6 @@
 /* ------------------------------------------------------------------
    Legal pages — privacy, terms, cookies, refunds, disclaimer, contact.
-   Uses engineering.css for the shared navigation, type tokens and footer.
+   Uses legal-layout.css for the shared navigation, type tokens and footer.
    ------------------------------------------------------------------ */
 
 .legal-page {
@@ -310,7 +310,7 @@
   color: var(--accent);
 }
 
-.legal-page .eng-footer {
+.legal-page .legal-footer {
   border-top: 1px solid var(--line);
 }
 
@@ -431,7 +431,7 @@
   .legal-toc,
   .legal-back,
   .legal-back-bottom,
-  .eng-footer {
+  .legal-footer {
     display: none !important;
   }
 

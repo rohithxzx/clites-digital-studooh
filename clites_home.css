@@ -430,25 +430,6 @@
       to { transform: translateX(calc(-50% - (var(--client-gap) / 2))); }
     }
 
-    @media (prefers-reduced-motion: no-preference) {
-      .glass-a { animation: glassA 22s ease-in-out infinite alternate; transform-origin: 720px 602px; }
-      .glass-b { animation: glassB 26s ease-in-out infinite alternate; transform-origin: 1060px 650px; }
-      .glass-c { animation: glassC 24s ease-in-out infinite alternate; transform-origin: 380px 650px; }
-    }
-
-    @keyframes glassA {
-      from { transform: translate3d(0,0,0) scale(1); }
-      to   { transform: translate3d(-10px,-14px,0) scale(1.02); }
-    }
-    @keyframes glassB {
-      from { transform: translate3d(0,0,0); }
-      to   { transform: translate3d(12px,-10px,0); }
-    }
-    @keyframes glassC {
-      from { transform: translate3d(0,0,0); }
-      to   { transform: translate3d(-8px,10px,0); }
-    }
-
     /* ---------- responsive ---------- */
     @media (min-width: 941px) and (max-width: 1100px) {
       .pill-nav { gap: 14px; }
@@ -1882,17 +1863,9 @@
 
   /* ---------- smooth scrolling ---------- */
   @media (prefers-reduced-motion: no-preference) {
-    html { scroll-behavior: smooth; }   /* fallback if the JS smooth-scroll can't load */
+    html { scroll-behavior: smooth; }
   }
-  html.lenis, html.lenis body { height: auto; }
-  .lenis.lenis-smooth { scroll-behavior: auto !important; }
-  .lenis:not(.lenis-autoToggle).lenis-stopped { overflow: clip; }
-  .lenis [data-lenis-prevent],
-  .lenis [data-lenis-prevent-wheel],
-  .lenis [data-lenis-prevent-touch],
-  .lenis [data-lenis-prevent-vertical],
-  .lenis [data-lenis-prevent-horizontal] { overscroll-behavior: contain; }
-  .lenis.lenis-smooth iframe { pointer-events: none; }
+
 
   /* =====================================================================
      SECTION — FOUNDERS  (scoped under .shf — nothing else is affected)

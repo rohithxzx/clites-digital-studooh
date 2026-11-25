@@ -9,10 +9,8 @@
   <meta property="og:title" content="Clites | Web Development Agency" />
   <meta property="og:site_name" content="Clites" />
   <meta property="og:description" content="Clites builds modern, responsive websites and digital experiences for businesses." />
-  <!-- <link rel="icon" type="image/png" href="img/clites-leaf.png" />
-  <link rel="shortcut icon" type="image/png" href="img/clites-leaf.png" /> -->
-   <link href="src/style.css" rel="stylesheet">
-   <link rel="icon" type="image/png" sizes="32x32" href="img/clites-leaf.png">
+
+  <link rel="icon" type="image/svg+xml" sizes="any" href="img/clites-leaf.svg">
 
 
   <!-- Enables the scroll-reveal styles only when JS runs and the visitor allows motion.
@@ -21,8 +19,10 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;1,400;1,500;1,600&display=swap" rel="stylesheet" /></noscript>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" /></noscript>
 
   <!-- =====================================================================
        SECTION 1 — HERO
@@ -77,13 +77,13 @@
   <link rel="stylesheet" href="inquiry-form.css" />
   <link rel="stylesheet" href="legal-footer.css" />
 </head>
-<body>
+<body id="top">
 
   <!-- ============ FIXED HEADER (shared by both sections) ============ -->
   <div class="nav-wrap">
       <nav class="pill-nav" aria-label="Main navigation">
         <a class="brand" href="#top" aria-label="Clites Home">
-          <img class="header-logo" src="img/clites-logo-white.png" alt="Clites" />
+          <img class="header-logo" src="img/clites-logo-white.svg" alt="Clites" />
         </a>
         <!-- <a class="brand" href="#top">
           <span class="brand-mark">
@@ -102,7 +102,6 @@
           <a href="#about">About</a>
           <a href="service.html">Services</a>
           <a href="portfolio.html" target="_blank">Portfolio</a>
-          <a href="engineering.html">Engineering</a>
           <a href="#contact">Pricing</a>
         </div>
 
@@ -118,7 +117,6 @@
         <a href="#about">About</a>
         <a href="service.html">Services</a>
         <a href="portfolio.html">Portfolio</a>
-        <a href="engineering.html">Engineering</a>
         <a href="#contact">Pricing</a>
       </div>
     </div>
@@ -217,16 +215,16 @@
     <div class="bg-glow" aria-hidden="true"></div>
     <span class="corner-fold" aria-hidden="true"></span>
 
-    <section class="hero-content" id="top">
-      <p class="eyebrow rv" style="--d:.05s;padding:6px 20px">
+    <section class="hero-content">
+      <p class="eyebrow" style="padding:6px 20px">
         Web Development &amp; Digital Solutions
       </p>
-      <h1 class="rv-split" style="--d:.15s">Building Digital <br />Experiences That Move <br />Businesses <span class="accent">Forward.</span></h1>
-      <p class="hero-copy rv" style="--d:.55s">
+      <h1>Building Digital <br />Experiences That Move <br />Businesses <span class="accent">Forward.</span></h1>
+      <p class="hero-copy">
         We design and develop modern, responsive websites that help businesses
         strengthen their online presence and grow with confidence.
       </p>
-      <a class="primary-button rv" style="--d:.7s" href="#contact" data-inquiry-open aria-haspopup="dialog">
+      <a class="primary-button" href="#contact" data-inquiry-open aria-haspopup="dialog">
         Start a Project
         <span class="button-arrow" aria-hidden="true">
           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -234,7 +232,7 @@
           </svg>
         </span>
       </a>
-      <a class="secondary-button rv" style="--d:.8s" href="#services">Explore Our Services</a>
+      <a class="secondary-button" href="#services">Explore Our Services</a>
     </section>
   </main>
 
@@ -270,7 +268,7 @@
         </div>
       </div>
       <div class="hww__media">
-        <img src="img/process-discovery.jpg" alt="Team collaborating around a table during a discovery meeting" width="564" height="500" loading="lazy" decoding="async" />
+        <img src="img/process-discovery.webp" alt="Team collaborating around a table during a discovery meeting" width="564" height="500" loading="lazy" decoding="async" />
       </div>
     </article>
 
@@ -291,7 +289,7 @@
         </div>
       </div>
       <div class="hww__media">
-        <img src="img/process-strategy.jpg" alt="Hands sketching a strategy map on a whiteboard" width="564" height="376" loading="lazy" decoding="async" />
+        <img src="img/process-strategy.webp" alt="Hands sketching a strategy map on a whiteboard" width="564" height="376" loading="lazy" decoding="async" />
       </div>
     </article>
 
@@ -312,7 +310,7 @@
         </div>
       </div>
       <div class="hww__media">
-        <img src="img/process-planning.jpg" alt="Planning session with notes and laptops on a desk" width="564" height="394" loading="lazy" decoding="async" />
+        <img src="img/process-planning.webp" alt="Planning session with notes and laptops on a desk" width="564" height="394" loading="lazy" decoding="async" />
       </div>
     </article>
 
@@ -333,7 +331,7 @@
         </div>
       </div>
       <div class="hww__media">
-        <img src="img/process-delivery.jpg" alt="Laptop showing a ready-to-launch project with final delivery checklist and post go-live support" width="1128" height="635" loading="lazy" decoding="async" />
+        <img src="img/process-delivery.webp" alt="Laptop showing a ready-to-launch project with final delivery checklist and post go-live support" width="1128" height="635" loading="lazy" decoding="async" />
       </div>
     </article>
 
@@ -473,7 +471,7 @@
       </div>
 
       <div class="shf__people rv" id="founder-cards" style="--d:.3s">
-        <img src="img/saznina nazrin.jpeg" alt="Rohith, Founder of Clites" title="Rohith — Founder, Clites" class="shf__photo" width="1680" height="936" loading="eager" fetchpriority="high" decoding="async" />
+        <img src="img/founder.webp" srcset="img/founder-800.webp 800w, img/founder.webp 1680w" sizes="(max-width: 560px) calc(100vw - 22px), (max-width: 850px) min(calc(100vw - 30px), 680px), min(calc(100vw - 56px), 1200px)" alt="Rohith, Founder of Clites" title="Rohith — Founder, Clites" class="shf__photo" width="1680" height="936" loading="lazy" decoding="async" />
       </div>
 
     </div>
@@ -589,7 +587,7 @@
   <footer class="sh-footer">
     <div class="sh-footer__inner rv-stagger" style="--d:.05s">
       <div class="sh-footer__brand">
-        <img src="img/clites-logo-white.png" alt="Clites logo" loading="lazy" />
+        <img src="img/clites-logo-white.svg" alt="Clites logo" loading="lazy" />
         <p>Websites and digital experiences for growing brands.</p>
         <div class="sh-footer__socials">
           <a href="#" aria-label="Facebook">f</a>
@@ -605,7 +603,6 @@
           <li><a href="#top">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="engineering.html">Engineering</a></li>
           <li><a href="#contact">Pricing</a></li>
         </ul>
       </div>
@@ -660,9 +657,9 @@
        .rv-stagger → children (tags / list items) reveal one by one
        ===================================================================== -->
   
-<script src="clites_home.js"></script>
-<script src="protect-lite.js"></script>
-<script src="js/site-footer.js"></script>
+<script defer src="clites_home.js"></script>
+<script defer src="protect-lite.js"></script>
+<script defer src="js/site-footer.js"></script>
 <script type="module" src="js/project-inquiry.js"></script>
 </body>
 </html>

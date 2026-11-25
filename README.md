@@ -9,19 +9,16 @@ clites-site/
 ├── index.html               # Homepage (hero, process, services, about, founders, FAQ, CTA)
 ├── service.html             # Services carousel and contact CTA
 ├── portfolio.html           # Portfolio page (empty state, ready for case studies)
-├── engineering.html         # Engineering knowledge library (41 concepts)
 ├── privacy-policy.html      # Privacy Policy
 ├── terms-and-conditions.html # Terms & Conditions
 ├── cookie-policy.html       # Cookie Policy
 ├── refund-policy.html       # Refund & Cancellation Policy
 ├── disclaimer.html          # Disclaimer
 ├── contact.html             # Contact and legal-contact information
+├── legal-layout.css         # Navigation and layout for the legal pages
 ├── legal.css                # Scoped styles for the legal pages
 ├── legal-footer.css         # Shared legal links, copyright and notice block
 ├── legal.js                 # Mobile navigation for the legal pages
-├── engineering.css          # Scoped styles for the engineering page
-├── engineering.js           # Search, filters and concept detail dialog
-├── engineering-data.js      # Local structured concept data (no database)
 ├── clites_home.css          # Core design system, layout and animations
 ├── clites_home.js           # Navigation, reveals, counters and interactions
 ├── protect-lite.js          # Image protection and interaction script
@@ -114,7 +111,6 @@ ENV_FILE=../clites.env node scripts/generate-supabase-config.mjs
 - **Contact CTA + Footer:** accessible project-inquiry dialog backed by Supabase, plus email/WhatsApp fallbacks and social profiles.
 - **Services Page:** responsive service carousel with RemixIcon and FontAwesome icons.
 - **Portfolio Page:** clean empty state while case studies are prepared.
-- **Engineering Page:** 41 backend and system-design concepts with search, category filters and an accessible detail dialog.
 - **Legal Pages:** Privacy, terms, cookies, refunds, disclaimer and contact pages with a shared responsive legal footer.
 - **Responsive Design:** tested across mobile, tablet and desktop viewports.
 
@@ -145,16 +141,6 @@ The pages live at their `.html` URLs. If a host supports clean URLs (for example
 - Confirm the business-specific payment, cancellation and refund terms in each written project agreement. The refund page deliberately does not invent a percentage, fee or non-refundable deposit.
 - Review the governing-law wording and all policies with a qualified professional for the business’s actual legal structure and jurisdiction.
 - The cookie policy reflects the current site: no first-party analytics or advertising cookies, no tracking pixels and no consent banner. Re-check the policy if analytics, advertising or other tracking is added later.
-
-## 🧠 Engineering Knowledge Page
-
-Open [`engineering.html`](engineering.html) (or link to it as `/engineering` if your host supports clean URLs). The page is static and uses no database, authentication or build step.
-
-- Concepts live in [`engineering-data.js`](engineering-data.js). Each object has `name`, `category`, `difficulty`, `summary`, `why` and `example`.
-- To add a concept, add an object to `window.ENGINEERING_CONCEPTS` with a unique `id` and an existing category ID. The page count, cards, search and filters update automatically.
-- To add a category, add it to `window.ENGINEERING_CATEGORIES` and use its `id` in concept objects.
-- Each concept has a shareable hash, for example `engineering.html#concept-rate-limiting`. The detail dialog includes a link back to all concepts.
-- Search matches concept names and a small set of common short forms in `window.ENGINEERING_SEARCH_ALIASES`.
 
 ## 🎨 Brand Notes
 - Public brand name and wordmark: **Clites**.

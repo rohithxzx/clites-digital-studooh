@@ -11,8 +11,9 @@
   <meta property="og:description" content="The Clites portfolio is coming soon. We design and develop modern, responsive websites for startups, small businesses and growing brands." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" />
-<link rel="icon" type="image/png" sizes="32x32" href="img/clites-leaf.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet" /></noscript>
+<link rel="icon" type="image/svg+xml" sizes="any" href="img/clites-leaf.svg" />
   <style>
     :root {
       --blue: #3b7d3b;
@@ -447,14 +448,13 @@
   <div class="nav-wrap">
     <nav class="pill-nav" aria-label="Main navigation">
       <a class="brand" href="index.html" aria-label="Clites Home">
-        <img class="header-logo" src="img/clites-logo-white.png" alt="Clites" />
+        <img class="header-logo" src="img/clites-logo-white.svg" alt="Clites" />
       </a>
       <div class="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html#about">About</a>
         <a href="service.html">Services</a>
         <a href="portfolio.html" class="active" aria-current="page">Portfolio</a>
-        <a href="engineering.html">Engineering</a>
         <a href="#contact">Pricing</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
@@ -467,7 +467,6 @@
       <a href="index.html#about">About</a>
       <a href="service.html">Services</a>
       <a href="portfolio.html" class="active">Portfolio</a>
-      <a href="engineering.html">Engineering</a>
       <a href="#contact">Pricing</a>
     </div>
   </div>
@@ -504,7 +503,7 @@
   <footer class="site-footer" id="contact">
     <div class="container footer-inner">
       <span>&copy; <span data-current-year>2026</span> Clites. All rights reserved.</span>
-      <div class="footer-links"><a href="engineering.html">Engineering</a><a href="https://wa.me/917339598683" target="_blank" rel="noopener">WhatsApp</a><a href="#">Instagram</a><a href="#">Behance</a><a href="mailto:contact@clites.in">Email us</a></div>
+      <div class="footer-links"><a href="https://wa.me/917339598683" target="_blank" rel="noopener">WhatsApp</a><a href="#">Instagram</a><a href="#">Behance</a><a href="mailto:contact@clites.in">Email us</a></div>
     </div>
     <div class="container">
       <div class="site-legal">
